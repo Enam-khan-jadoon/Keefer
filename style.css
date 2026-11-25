@@ -1,0 +1,1329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+/* ==============================
+   HEADER
+================================ */
+
+#container {
+  width: 96%;
+  max-width: 1400px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img img {
+  max-width: 100%;
+}
+
+#container .contact {
+  text-align: right;
+}
+
+#container .contact .red {
+  color: maroon;
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+#container .contact hr {
+  height: 3px;
+  background-color: #222;
+  margin: 7px 0;
+}
+
+#container .contact .num {
+  font-size: 33px;
+  margin: 5px 0;
+  color: #222;
+}
+
+#container .contact h3 {
+  font-size: 13px;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* ==============================
+   NAVIGATION BAR
+================================ */
+
+.navbar {
+  width: 100%;
+  background-color: maroon;
+  padding: 17px 3%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+.navbar .grey {
+  background-color: grey;
+  padding: 17px 20px;
+  margin: -17px 0;
+}
+
+/* ==============================
+   MAIN BANNER AND FORM
+================================ */
+
+.container-1 {
+  width: 96%;
+  max-width: 1400px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.container-1 .img-1 {
+  width: 49%;
+}
+
+.container-1 .img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-1 .bg {
+  width: 51%;
+  min-height: 420px;
+  padding: 15px;
+  background-image: url("form_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Form Heading */
+
+.container-1 .bg .quests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-1 .bg .qest {
+  background-color: maroon;
+  padding: 10px 15px;
+  width: fit-content;
+  color: white;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.container-1 .bg .quests .q1 {
+  flex: 1;
+  text-align: right;
+}
+
+.container-1 .bg h2 {
+  font-size: 21px;
+  color: #222;
+}
+
+.container-1 .bg h2 .bold {
+  color: darkslateblue;
+  font-size: 30px;
+}
+
+/* Form Paragraph */
+
+.container-1 .bg .para {
+  width: 95%;
+  margin: 20px auto;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container-1 .bg .para .bld {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Form Inputs */
+
+.container-1 .bg .form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.container-1 .bg .form .forms {
+  flex: 1;
+}
+
+.container-1 .bg .form .forms .flex-form-1 {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-1 .bg .form .forms .flex-form-1 label {
+  width: 60px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.container-1 .bg .form .forms .flex-form-1 input {
+  width: 100%;
+  max-width: 220px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+.container-1 .bg .form .forms .flex-form-1 input:focus {
+  border-color: maroon;
+}
+
+.container-1 .bg .form .con-pic {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 .bg .form .con-pic img {
+  width: 90%;
+  transform: rotate(13deg);
+}
+
+/* Textarea */
+
+.container-1 .bg .area {
+  width: 95%;
+  margin: 15px auto;
+}
+
+.container-1 .bg .area textarea {
+  width: 100%;
+  height: 75px;
+  padding: 8px;
+  font-size: 14px;
+  resize: vertical;
+  border: 1px solid #aaa;
+}
+
+/* Privacy and Submit Button */
+
+.container-1 .bg .privacy {
+  width: 95%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-1 .bg .privacy .para-1 p {
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
+}
+
+.container-1 .bg .privacy .btn button {
+  background-color: maroon;
+  width: 230px;
+  min-height: 42px;
+  padding: 8px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.container-1 .bg .privacy .btn button:hover,
+.container-2 button:hover,
+.container-3 button:hover {
+  background-color: #570000;
+}
+
+.container-1 .bg .privacy .btn button .fa-solid {
+  margin-left: 10px;
+}
+
+/* ==============================
+   SECOND SECTION
+================================ */
+
+.container-2 {
+  width: 96%;
+  max-width: 1400px;
+  margin: 25px auto;
+}
+
+.container-2 h1 {
+  color: grey;
+  margin: 5px 0;
+  font-size: 23px;
+}
+
+.container-2 h1 .dui {
+  color: maroon;
+}
+
+.container-2 .flex-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+}
+
+/* First Column */
+
+.container-2 .flex-container-1 .col-flex {
+  flex: 1 1 32%;
+  min-width: 0;
+}
+
+.container-2 .flex-container-1 .first-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 5px;
+}
+
+.container-2 .flex-container-1 .first-flex .first-col {
+  flex: 1;
+}
+
+.container-2 .flex-container-1 .first-flex .first-col h2 {
+  color: maroon;
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.container-2 .flex-container-1 .first-flex .first-col p {
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: grey;
+}
+
+.container-2 .flex-container-1 .first-flex .paper {
+  flex-shrink: 0;
+}
+
+.container-2 .flex-container-1 .first-flex .paper img {
+  width: 95px;
+  height: auto;
+}
+
+.container-2 .flex-container-1 .line-2 {
+  margin-top: 10px;
+}
+
+.container-2 .flex-container-1 .line-2 .hrr {
+  width: 100%;
+  margin: 0;
+}
+
+/* First Column Button */
+
+.bms {
+  display: block;
+  width: 160px;
+  height: 35px;
+  margin: 10px 0 0 auto;
+  background-color: maroon;
+  color: white;
+  font-size: 13px;
+}
+
+.bms .fa-solid {
+  margin-left: 8px;
+}
+
+/* Vertical Dividers */
+
+.container-2 .flex-container-1 > hr {
+  width: 1px;
+  flex: 0 0 1px;
+  align-self: stretch;
+  border: none;
+  border-left: 1px solid #ccc;
+}
+
+/* ==============================
+   BLOG AND CASE RESULTS
+================================ */
+
+.container-2 .flex-container-1 .flex-blog {
+  flex: 1 1 35%;
+  min-width: 0;
+}
+
+.container-2 .flex-container-1 .flex-blog .blog-1,
+.container-2 .flex-container-1 .flex-blog .blog-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 5px;
+}
+
+.container-2 .flex-container-1 .flex-blog .blog-1 {
+  border-bottom: 1px solid #ccc;
+}
+
+.container-2 .flex-container-1 .flex-blog .paragraph,
+.container-2 .flex-container-1 .flex-blog .paragraph-1 {
+  flex: 1;
+}
+
+.container-2 .flex-container-1 .flex-blog .paragraph .blg,
+.container-2 .flex-container-1 .flex-blog .paragraph-1 .blg-1 {
+  color: maroon;
+}
+
+.container-2 .flex-container-1 .flex-blog .blog-1 .paragraph p,
+.container-2 .flex-container-1 .flex-blog .blog-2 .paragraph-1 p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: grey;
+}
+
+.container-2 .flex-container-1 .flex-blog .blog-1 hr,
+.container-2 .flex-container-1 .flex-blog .blog-2 hr {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.container-2 .flex-container-1 .flex-blog .blog-1 button,
+.container-2 .flex-container-1 .flex-blog .blog-2 button {
+  background-color: maroon;
+  color: white;
+  width: 125px;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.container-2 .flex-container-1 .flex-blog .blog-1 button .fa-solid,
+.container-2 .flex-container-1 .flex-blog .blog-2 button .fa-solid {
+  margin-left: 7px;
+}
+
+.container-2 .flex-container-1 .flex-blog .img-2 img,
+.container-2 .flex-container-1 .flex-blog .img-3 img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* ==============================
+   CERTIFICATES COLUMN
+================================ */
+
+.container-2 .flex-container-1 .col-3 {
+  flex: 1 1 32%;
+  min-width: 0;
+  padding: 10px 5px;
+}
+
+.container-2 .flex-container-1 .col-3 .images-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.container-2 .flex-container-1 .col-3 .images-flex .images {
+  flex: 1;
+  min-width: 0;
+}
+
+.container-2 .flex-container-1 .col-3 .images-flex .images img {
+  width: 100%;
+  max-width: 180px;
+  height: 120px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.container-2 .flex-container-1 .col-3 h1 {
+  font-size: 20px;
+}
+
+.container-2 .flex-container-1 .col-3 h1 .credit {
+  color: maroon;
+}
+
+.container-2 .flex-container-1 .col-3 p {
+  color: grey;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0 15px;
+}
+
+.container-2 .flex-container-1 .col-3 hr {
+  width: 75%;
+  margin: 10px 0 10px auto;
+}
+
+.container-2 .flex-container-1 .col-3 button {
+  display: block;
+  background-color: maroon;
+  color: white;
+  width: 145px;
+  height: 32px;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.container-2 .flex-container-1 .col-3 button .fa-solid {
+  margin-left: 8px;
+}
+
+/* ==============================
+   SECTION DIVIDER
+================================ */
+
+.hr-shade {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.hr-shade img {
+  width: 100%;
+}
+
+/* ==============================
+   THIRD SECTION
+================================ */
+
+.container-3 {
+  width: 96%;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+}
+
+.container-3 .flex-container-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* ==============================
+   PRACTICE AREAS COLUMN
+================================ */
+
+.container-3 .flex-container-3 .flex-col-1 {
+  display: flex;
+  flex: 1 1 28%;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .practice {
+  width: 100%;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 23px;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .practice .areas {
+  color: maroon;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .boxes {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: grey;
+  color: white;
+  padding: 12px;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .boxes h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .boxes h4 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .boxes h4 .fa-solid {
+  margin-left: 7px;
+  color: maroon;
+}
+
+/* Learn More */
+
+.container-3 .flex-container-3 .flex-col-1 .learn {
+  margin: 15px 0 20px;
+  color: grey;
+  font-size: 21px;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .learn .more {
+  color: maroon;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .me,
+.container-3 .flex-container-3 .flex-col-1 .ar,
+.container-3 .flex-container-3 .flex-col-1 .he {
+  color: grey;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.container-3 .flex-container-3 .flex-col-1 .me {
+  margin-top: 20px;
+}
+
+/* ==============================
+   PAGE CONTENT COLUMN
+================================ */
+
+.container-3 .flex-container-3 .flex-col-2 {
+  flex: 1 1 42%;
+  min-width: 0;
+}
+
+.container-3 .flex-container-3 .flex-col-2 .p-title {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.container-3 .flex-container-3 .flex-col-2 p {
+  color: grey;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* ==============================
+   TESTIMONIALS COLUMN
+================================ */
+
+.container-3 .flex-container-3 .flex-col-3 {
+  display: flex;
+  flex: 1 1 25%;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials h1 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: grey;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials h1 .test {
+  color: maroon;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials p {
+  font-size: 14px;
+  color: grey;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials hr {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials button {
+  background-color: maroon;
+  width: 145px;
+  color: white;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .testimonials button .fa-solid {
+  margin-left: 8px;
+}
+
+/* Certificates Images */
+
+.container-3 .flex-container-3 .flex-col-3 .last-imgs {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .last-imgs img {
+  width: 120px;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Social Media */
+
+.container-3 .flex-container-3 .flex-col-3 .shadow {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .shadow img {
+  width: 100%;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .last-h {
+  margin: 10px 0;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .last-h .flw {
+  color: grey;
+  font-size: 23px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .last-h .uss {
+  color: maroon;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container-3 .flex-container-3 .flex-col-3 .icons .icon-1 img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+================================ */
+
+/* ==========================================================
+   RESPONSIVE MEDIA QUERIES
+   ----------------------------------------------------------
+   style.css mein jahan "TABLET RESPONSIVENESS" ka comment
+   shuru hota hai, wahan se file k end tak sab delete kar k
+   ye poora block paste kar den. Is se upar ka CSS same rahega.
+
+   Breakpoints:
+   992px - 1100px  : laptop / tablet landscape (2 column layout, compact)
+   max 991px       : tablet (sections stack, buttons center)
+   max 767px       : large phones / small tablets
+   max 575px       : phones
+   max 360px       : very small phones
+========================================================== */
+
+/* ==============================
+   LAPTOP / TABLET LANDSCAPE
+   (992px to 1100px)
+================================ */
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .container-1 .bg {
+    padding: 12px;
+  }
+
+  .container-1 .bg .qest {
+    font-size: 20px;
+  }
+
+  .container-1 .bg h2 {
+    font-size: 17px;
+  }
+
+  .container-1 .bg h2 .bold {
+    font-size: 23px;
+  }
+
+  .container-1 .bg .para {
+    font-size: 13px;
+  }
+
+  .container-1 .bg .form .forms .flex-form-1 input {
+    max-width: 170px;
+  }
+
+  .container-1 .bg .privacy .btn button {
+    width: 190px;
+    font-size: 12px;
+  }
+
+  .container-2 .flex-container-1 {
+    gap: 10px;
+  }
+
+  .container-2 .flex-container-1 .first-flex .paper img {
+    width: 75px;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .img-2 img,
+  .container-2 .flex-container-1 .flex-blog .img-3 img {
+    max-width: 90px;
+  }
+
+  .container-3 .flex-container-3 {
+    gap: 20px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .boxes h1 {
+    font-size: 17px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-2 p {
+    font-size: 13px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .testimonials h1 {
+    font-size: 16px;
+  }
+}
+
+/* ==============================
+   TABLET (max 991px)
+   Sections stack, buttons center
+================================ */
+
+@media (max-width: 991px) {
+  /* Navigation */
+
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  /* Banner + Form */
+
+  .container-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-1 .img-1,
+  .container-1 .bg {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .container-1 .img-1 img {
+    height: auto;
+  }
+
+  .container-1 .bg {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .container-1 .bg .form .forms .flex-form-1 input {
+    max-width: none;
+  }
+
+  /* Form button centered */
+
+  .container-1 .bg .privacy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .container-1 .bg .privacy .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Second Section stacked */
+
+  .container-2 .flex-container-1 {
+    flex-direction: column;
+    gap: 25px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .container-2 .flex-container-1 > hr {
+    width: 100%;
+    height: 1px;
+    flex: none;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .container-2 .flex-container-1 .col-flex,
+  .container-2 .flex-container-1 .flex-blog,
+  .container-2 .flex-container-1 .col-3 {
+    flex: none;
+    width: 100%;
+  }
+
+  .container-2 .flex-container-1 .first-flex .paper img {
+    width: 110px;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .img-2 img,
+  .container-2 .flex-container-1 .flex-blog .img-3 img {
+    max-width: 120px;
+  }
+
+  /* Second Section buttons centered */
+
+  .bms {
+    margin: 10px auto 0;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .blog-1 button,
+  .container-2 .flex-container-1 .flex-blog .blog-2 button {
+    margin: 0 auto;
+  }
+
+  .container-2 .flex-container-1 .col-3 hr {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .container-2 .flex-container-1 .col-3 button {
+    margin: 0 auto;
+  }
+
+  /* Third Section stacked */
+
+  .container-3 .flex-container-3 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1,
+  .container-3 .flex-container-3 .flex-col-2,
+  .container-3 .flex-container-3 .flex-col-3 {
+    flex: none;
+    width: 100%;
+  }
+
+  .container-3 .flex-container-3 .flex-col-2 p {
+    font-size: 14px;
+  }
+
+  /* Third Section right column: centered content and buttons */
+
+  .container-3 .flex-container-3 .flex-col-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .testimonials button {
+    margin: 0 auto;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .last-imgs {
+    width: auto;
+    margin: 8px 15px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .last-h {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .icons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==============================
+   TABLET PORTRAIT
+   (576px to 991px)
+   Practice area boxes in 2 columns
+================================ */
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .container-3 .flex-container-3 .flex-col-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .practice,
+  .container-3 .flex-container-3 .flex-col-1 .learn,
+  .container-3 .flex-container-3 .flex-col-1 .me,
+  .container-3 .flex-container-3 .flex-col-1 .ar,
+  .container-3 .flex-container-3 .flex-col-1 .he {
+    width: 100%;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .boxes {
+    width: calc(50% - 8px);
+  }
+}
+
+/* ==============================
+   LARGE PHONES / SMALL TABLETS
+   (max 767px)
+================================ */
+
+@media (max-width: 767px) {
+  /* Header */
+
+  #container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  #container .contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  #container .contact hr {
+    max-width: 320px;
+    margin: 7px auto;
+  }
+
+  .logo-img img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  /* Navigation */
+
+  .navbar {
+    justify-content: center;
+    gap: 10px 20px;
+    padding: 12px 10px;
+  }
+
+  .navbar .grey {
+    margin: 0;
+    padding: 8px 14px;
+  }
+
+  /* Divider image */
+
+  .hr-shade {
+    margin: 20px 0;
+  }
+}
+
+/* ==============================
+   PHONES (max 575px)
+================================ */
+
+@media (max-width: 575px) {
+  /* Header */
+
+  #container .contact .red {
+    font-size: 16px;
+  }
+
+  #container .contact .num {
+    font-size: 26px;
+  }
+
+  #container .contact h3 {
+    font-size: 12px;
+  }
+
+  /* Navigation */
+
+  .navbar {
+    gap: 8px 16px;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  /* Banner + Form */
+
+  .container-1 {
+    margin: 10px auto;
+    gap: 15px;
+  }
+
+  .container-1 .bg {
+    padding: 15px 12px;
+  }
+
+  .container-1 .bg .quests {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .container-1 .bg .qest {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .container-1 .bg .quests .q1 {
+    flex: none;
+    text-align: center;
+  }
+
+  .container-1 .bg h2 {
+    font-size: 18px;
+  }
+
+  .container-1 .bg h2 .bold {
+    font-size: 25px;
+  }
+
+  .container-1 .bg .para {
+    width: 100%;
+    margin: 15px auto;
+    font-size: 13px;
+  }
+
+  .container-1 .bg .form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .container-1 .bg .form .forms {
+    flex: none;
+    width: 100%;
+  }
+
+  .container-1 .bg .form .forms .flex-form-1 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .container-1 .bg .form .forms .flex-form-1 label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .container-1 .bg .form .con-pic {
+    width: 100%;
+  }
+
+  .container-1 .bg .form .con-pic img {
+    width: 60%;
+    max-width: 170px;
+    margin: 0 auto;
+  }
+
+  .container-1 .bg .area {
+    width: 100%;
+  }
+
+  .container-1 .bg .privacy {
+    width: 100%;
+  }
+
+  .container-1 .bg .privacy .btn button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Second Section */
+
+  .container-2 {
+    margin: 15px auto;
+  }
+
+  .container-2 h1 {
+    font-size: 20px;
+  }
+
+  .container-2 .flex-container-1 {
+    gap: 20px;
+  }
+
+  .container-2 .flex-container-1 .first-flex,
+  .container-2 .flex-container-1 .flex-blog .blog-1,
+  .container-2 .flex-container-1 .flex-blog .blog-2 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .container-2 .flex-container-1 .first-flex .first-col,
+  .container-2 .flex-container-1 .flex-blog .paragraph,
+  .container-2 .flex-container-1 .flex-blog .paragraph-1 {
+    flex: none;
+    width: 100%;
+  }
+
+  .container-2 .flex-container-1 .first-flex .first-col h2 {
+    font-size: 18px;
+  }
+
+  .container-2 .flex-container-1 .first-flex .paper img {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .img-2 img,
+  .container-2 .flex-container-1 .flex-blog .img-3 img {
+    margin: 0 auto;
+  }
+
+  .container-2 .flex-container-1 .col-3 {
+    text-align: center;
+  }
+
+  .container-2 .flex-container-1 .col-3 h1 {
+    font-size: 18px;
+  }
+
+  /* Third Section */
+
+  .container-3 {
+    margin: 0 auto 30px;
+  }
+
+  .container-3 .flex-container-3 {
+    gap: 30px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .practice {
+    font-size: 21px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .boxes h1 {
+    font-size: 17px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-2 .p-title {
+    font-size: 21px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-2 p {
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .testimonials {
+    text-align: center;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .testimonials h1 {
+    font-size: 17px;
+  }
+}
+
+/* ==============================
+   VERY SMALL PHONES (max 360px)
+================================ */
+
+@media (max-width: 360px) {
+  #container .contact .red {
+    font-size: 15px;
+  }
+
+  #container .contact .num {
+    font-size: 23px;
+  }
+
+  .navbar {
+    gap: 8px 12px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .container-1 .bg .qest {
+    font-size: 20px;
+  }
+
+  .container-1 .bg h2 .bold {
+    font-size: 22px;
+  }
+
+  .container-2 .flex-container-1 .col-3 h1 {
+    font-size: 17px;
+  }
+}
