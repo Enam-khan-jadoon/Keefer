@@ -1013,6 +1013,319 @@ hr {
   }
 }
 
+/* ==========================================================
+   RESPONSIVE MEDIA QUERIES
+   ----------------------------------------------------------
+   style.css mein jahan "TABLET RESPONSIVENESS" ka comment
+   shuru hota hai, wahan se file k end tak sab delete kar k
+   ye poora block paste kar den. Is se upar ka CSS same rahega.
+
+   Is file mein 2 hisse hain:
+   1) DESIGN SHADOWS  : design.jpg k mutabiq shadows (har screen par)
+   2) MEDIA QUERIES   : responsive layout
+
+   Breakpoints:
+   992px - 1100px  : laptop / tablet landscape (2 column layout, compact)
+   max 991px       : tablet (sections stack, buttons center)
+   max 767px       : large phones / small tablets
+   max 575px       : phones
+   max 360px       : very small phones
+========================================================== */
+
+/* ==============================
+   DESIGN SHADOWS (design.jpg ke mutabiq)
+   Ye media query nahi hai, har screen size par lagta hai.
+   Agar shadows nahi chahiye to sirf ye hissa delete kar den.
+================================ */
+
+/* Banner image aur form box k around */
+.container-1 .img-1,
+.container-1 .bg {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Saare red buttons k neechay */
+.container-1 .bg .privacy .btn button,
+.bms,
+.container-2 .flex-container-1 .flex-blog .blog-1 button,
+.container-2 .flex-container-1 .flex-blog .blog-2 button,
+.container-2 .flex-container-1 .col-3 button,
+.container-3 .flex-container-3 .flex-col-3 .testimonials button {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Practice Areas k grey boxes: left edge ka dark shade + neechay shadow */
+.container-3 .flex-container-3 .flex-col-1 .boxes {
+  box-shadow:
+    inset 8px 0 8px -6px rgba(90, 0, 0, 0.85),
+    0 4px 5px -1px rgba(0, 0, 0, 0.45);
+}
+
+/* Buttons se upar ki lines (hr) k neechay halka shadow */
+.container-2 .flex-container-1 .line-2 .hrr,
+.container-2 .flex-container-1 .flex-blog .blog-1 hr,
+.container-2 .flex-container-1 .flex-blog .blog-2 hr,
+.container-2 .flex-container-1 .col-3 hr,
+.container-3 .flex-container-3 .flex-col-3 .testimonials hr {
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* ==============================
+   MEDIA QUERIES
+================================ */
+
+/* ==============================
+   LAPTOP / TABLET LANDSCAPE
+   (992px to 1100px)
+================================ */
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .container-1 .bg {
+    padding: 12px;
+  }
+
+  .container-1 .bg .qest {
+    font-size: 20px;
+  }
+
+  .container-1 .bg h2 {
+    font-size: 17px;
+  }
+
+  .container-1 .bg h2 .bold {
+    font-size: 23px;
+  }
+
+  .container-1 .bg .para {
+    font-size: 13px;
+  }
+
+  .container-1 .bg .form .forms .flex-form-1 input {
+    max-width: 170px;
+  }
+
+  .container-1 .bg .privacy .btn button {
+    width: 190px;
+    font-size: 12px;
+  }
+
+  .container-2 .flex-container-1 {
+    gap: 10px;
+  }
+
+  .container-2 .flex-container-1 .first-flex .paper img {
+    width: 75px;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .img-2 img,
+  .container-2 .flex-container-1 .flex-blog .img-3 img {
+    max-width: 90px;
+  }
+
+  .container-3 .flex-container-3 {
+    gap: 20px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .boxes h1 {
+    font-size: 17px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-2 p {
+    font-size: 13px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .testimonials h1 {
+    font-size: 16px;
+  }
+}
+
+/* ==============================
+   TABLET (max 991px)
+   Sections stack, buttons center
+================================ */
+
+@media (max-width: 991px) {
+  /* Header: logo aur contact kabhi overlap na hon (jagah kam ho to contact neechay chala jaye) */
+
+  #container {
+    flex-wrap: wrap;
+  }
+
+  .logo-img {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* Navigation */
+
+  .navbar {
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  /* Banner + Form */
+
+  .container-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-1 .img-1,
+  .container-1 .bg {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .container-1 .img-1 img {
+    height: auto;
+  }
+
+  .container-1 .bg {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .container-1 .bg .form .forms .flex-form-1 input {
+    max-width: none;
+  }
+
+  /* CONFIDENTIAL stamp form k fields par na chadhe */
+
+  .container-1 .bg .form .con-pic {
+    padding: 14px 0;
+  }
+
+  /* Form button centered */
+
+  .container-1 .bg .privacy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .container-1 .bg .privacy .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Second Section stacked */
+
+  .container-2 .flex-container-1 {
+    flex-direction: column;
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .container-2 .flex-container-1 > hr {
+    width: 100%;
+    height: 1px;
+    flex: none;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .container-2 .flex-container-1 .col-flex,
+  .container-2 .flex-container-1 .flex-blog,
+  .container-2 .flex-container-1 .col-3 {
+    flex: none;
+    width: 100%;
+  }
+
+  .container-2 .flex-container-1 .first-flex .paper img {
+    width: 110px;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .img-2 img,
+  .container-2 .flex-container-1 .flex-blog .img-3 img {
+    max-width: 120px;
+  }
+
+  /* Second Section buttons centered */
+
+  .bms {
+    margin: 10px auto 0;
+  }
+
+  .container-2 .flex-container-1 .flex-blog .blog-1 button,
+  .container-2 .flex-container-1 .flex-blog .blog-2 button {
+    margin: 0 auto;
+  }
+
+  .container-2 .flex-container-1 .col-3 hr {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .container-2 .flex-container-1 .col-3 button {
+    margin: 0 auto;
+  }
+
+  /* Third Section stacked */
+
+  .container-3 .flex-container-3 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .container-3 .flex-container-3 .flex-col-1,
+  .container-3 .flex-container-3 .flex-col-2,
+  .container-3 .flex-container-3 .flex-col-3 {
+    flex: none;
+    width: 100%;
+  }
+
+  .container-3 .flex-container-3 .flex-col-2 p {
+    font-size: 14px;
+  }
+
+  /* Third Section right column: centered content and buttons */
+
+  .container-3 .flex-container-3 .flex-col-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .testimonials button {
+    margin: 0 auto;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .last-imgs {
+    width: auto;
+    margin: 8px 15px;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .last-h {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-3 .flex-container-3 .flex-col-3 .icons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* ==============================
    TABLET PORTRAIT
    (576px to 991px)
@@ -1037,6 +1350,10 @@ hr {
 
   .container-3 .flex-container-3 .flex-col-1 .boxes {
     width: calc(50% - 8px);
+  }
+
+  .container-3 .flex-container-3 .flex-col-1 .boxes h1 {
+    font-size: 17px;
   }
 }
 
@@ -1186,9 +1503,13 @@ hr {
     width: 100%;
   }
 
+  .container-1 .bg .form .con-pic {
+    padding: 22px 0;
+  }
+
   .container-1 .bg .form .con-pic img {
-    width: 60%;
-    max-width: 170px;
+    width: 55%;
+    max-width: 160px;
     margin: 0 auto;
   }
 
@@ -1237,6 +1558,12 @@ hr {
 
   .container-2 .flex-container-1 .first-flex .first-col h2 {
     font-size: 18px;
+  }
+
+  .container-2 .flex-container-1 .first-flex .paper,
+  .container-2 .flex-container-1 .flex-blog .img-2,
+  .container-2 .flex-container-1 .flex-blog .img-3 {
+    order: -1;
   }
 
   .container-2 .flex-container-1 .first-flex .paper img {
